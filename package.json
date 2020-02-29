@@ -1,0 +1,25 @@
+{
+  "name": "methcode",
+  "version": "6.13.4",
+  "description": "HackTeam9CodeSwitching",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoKoppel/HackTeam9CodeSwitching.git"
+  },
+  "keywords": [
+    "Learning"
+  ],
+  "author": "HackTeam9",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrunoKoppel/HackTeam9CodeSwitching/issues"
+  },
+  "homepage": "https://github.com/BrunoKoppel/HackTeam9CodeSwitching#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
