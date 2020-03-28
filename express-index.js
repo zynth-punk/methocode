@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
-const port = 8000
+const port = 8080
+
+express.static(static, [options])
 
 app.get('/', (req, res) => res.send('Welcome to the Beginnings of MethCode'))
 
