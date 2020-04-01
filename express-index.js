@@ -4,7 +4,7 @@ const port = 8000
 
 
 app.get('/', function(request, response){
-    response.sendFile('HomePage/index.html');
+    response.sendFile('index.html', { root: __HomePage});
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
