@@ -5,7 +5,7 @@ const port = 8000
 var path = require('path');
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + '/HomePage/Index.html'));
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
