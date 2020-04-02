@@ -1,0 +1,15 @@
+const express = require('express')
+const app = express()
+const port = 8000
+
+<<<<<<< HEAD
+app.get('/', (req, res) => res.send('Welcome to the Beginnings of MethCode'))
+=======
+var path = require('path');
+
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/HomePage/index.html'));
+});
+>>>>>>> 0170a0b3324e38cd09ae832830cb5c123ca0652c
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
