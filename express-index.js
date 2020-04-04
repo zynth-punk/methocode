@@ -8,6 +8,6 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/PagesTree//HTML/mainmenu.html'));
 });
 
-app.use(express.static(path.join(__dirname, '/PagesTree/CSS/')));
+app.use(express.static(path.join(__dirname, '/PagesTree/')));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))s
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
