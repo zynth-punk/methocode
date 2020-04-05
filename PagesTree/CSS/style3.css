@@ -1,0 +1,42 @@
+.but1{
+     position: relative;
+    left: 50%;
+    margin-left: -100px;
+   margin-top:50px;
+   width:200px;
+   height:50px;
+}
+.but2{
+    border-radius:50%;
+    position: relative;
+    left: 38%;
+    padding:30px;
+    margin-top:80px;
+    
+}
+.but3{
+    border-radius:50%;
+    position: relative;
+    left: 38%;
+    padding:30px;
+    margin-top:80px;
+    
+}
+.but4{
+    border-radius:50%;
+    position: relative;
+    left: 38%;
+    padding:30px;
+    margin-top:80px;
+    
+}.but5{
+    position: relative;
+    left:50%;
+    margin-left:-140px;
+   margin-top:50px;
+   width:300px;
+   height:50px;
+}
+.RbtnMargin{
+    margin-right:400px;
+}

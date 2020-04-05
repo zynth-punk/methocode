@@ -1,0 +1,32 @@
+body{
+    background-color:coral;
+}
+.container{
+    margin:30px auto;
+    max-width: 400px ;
+}
+form{
+     background-color: rgb(255, 182, 47);
+     padding:20px;
+     color:white;
+    } 
+label{
+    display:block;
+}
+ input{
+        width:100%;
+        margin-bottom:10px;
+        border-radius:5px;
+ }
+ button{
+     width:100%;
+     padding:10px;
+     background-color:saddlebrown;
+     cursor:pointer;
+ }
+ button:hover{
+     background-color:rgb(78, 38, 10);
+
+ }
+
+ 
