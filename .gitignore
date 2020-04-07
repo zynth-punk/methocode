@@ -1,0 +1,6 @@
+*.zip
+*.gz
+log/*.log
+log/*.log.[0-9]
+.DS_Store
+.DS_Store
