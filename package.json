@@ -1,26 +1,30 @@
 {
-  "name": "methcode",
-  "version": "6.13.4",
-  "description": "HackTeam9CodeSwitching",
-  "main": "main.js",
+  "name": "methocode",
+  "version": "5.1.0",
+  "description": "App to help developers learn programming languages faster",
+  "main": "express-index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "initiate test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BrunoKoppel/HackTeam9CodeSwitching.git"
   },
   "keywords": [
-    "Learning"
+    "HackTeam9"
   ],
-  "author": "HackTeam9",
+  "author": "Bruno Koppel, Admas Kebede, Christine Brown, Jordan Thompson, Marie Natacha Pilorge.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BrunoKoppel/HackTeam9CodeSwitching/issues"
   },
   "homepage": "https://github.com/BrunoKoppel/HackTeam9CodeSwitching#readme",
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {}
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7",
+    "node": "^13.12.0",
+    "nodemon": "^2.0.2"
+  }
 }
