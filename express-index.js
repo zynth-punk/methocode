@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname , '/public')));
 
 var pageRouter = require('./routes/page_router.js');
 
-app.use('/', pageRouter); 
+app.use('/', pageRouter);
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
