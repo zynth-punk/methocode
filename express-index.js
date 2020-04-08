@@ -5,7 +5,10 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 const router = express.Router();
+var io = require('@pm2/io')
 var path = require('path');
+
+var counter = io.counter({  name : 'Active requests' })
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
