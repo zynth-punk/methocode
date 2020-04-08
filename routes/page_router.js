@@ -3,7 +3,7 @@ var router = express.Router();
 const app = express();
 var path = require('path');
 var io = require('@pm2/io')
-var counter = io.counter({  name : 'Active requests' })
+var counter = io.counter({  name : 'Pages browsed' })
 
 app.use(express.static(path.join(__dirname , '/public')));
 
