@@ -1,4 +1,4 @@
 # This Project has been moved to:
 -->> https://github.com/Hack-Diversity/HackTeam9-Methocode <<--
 
-website http://methocode.com
+you can access its deployment at the website http://methocode.com
