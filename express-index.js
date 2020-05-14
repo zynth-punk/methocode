@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 const router = express.Router();
+require('dotenv').config();
 
 var path = require('path');
 
@@ -26,6 +27,6 @@ var pageRouter = require('./routes/page_router.js');
 app.use('/', pageRouter);
 
 
-aapp.listen(port, () => {
+app.listen(port, () => {
     console.log(`Server running on port ${port}`)
   });
