@@ -3,11 +3,17 @@ const db = require('./data');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
-const port = 3000;
 const router = express.Router();
 
 var path = require('path');
 
+const port = process.env.PORT || 5000;
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
@@ -19,9 +25,7 @@ var pageRouter = require('./routes/page_router.js');
 
 app.use('/', pageRouter);
 
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-
-
-
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+aapp.listen(port, () => {
+    console.log(`Server running on port ${port}`)
+  });

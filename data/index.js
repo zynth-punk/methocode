@@ -1,12 +1,11 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/methocode', { useNewUrlParser: true, useUnifiedTopology: true } ).then(() => {
-console.log("Connected to Database");
-}).catch((err) => {
-    console.log("Not Connected to Database ERROR! ", err);
-});
+//connect to the database
+mongoose.connect(process.env.DB, { useNewUrlParser: true})
+    .then(() => console.log('Database connected successfuly'))
+    .catch(err => console.log(err));
 
-
-const db = mongoose.connection
+//since mongoose promise is depreciated, we overide it with node's promise
+mongoose.Promise = global.Promise;
 
 module.exports = db
