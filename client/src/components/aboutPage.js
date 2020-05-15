@@ -7,7 +7,7 @@ function App() {
     <NavigationBar />
       <header className="App-header">
         <p>
-          Hello from Code Translator.
+          Hello from About Page.
         </p>
       </header>
     </div>
