@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavigationBar } from './NavigationBar';
+import { NavigationBar } from '../components/NavigationBar';
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
     <NavigationBar />
       <header className="App-header">
         <p>
-          Hello from Help Page.
+          Hello from Programming Language.
         </p>
       </header>
     </div>

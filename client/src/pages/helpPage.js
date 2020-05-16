@@ -1,18 +1,17 @@
 import React from 'react';
-import { NavigationBar } from './NavigationBar';
+import { NavigationBar } from '../components/NavigationBar';
 
-function MainMenu() {
+function App() {
   return (
     <div className="App">
-      <NavigationBar />
+    <NavigationBar />
       <header className="App-header">
-        
         <p>
-          Hello from MainMenu.
+          Hello from Help Page.
         </p>
       </header>
     </div>
   );
 }
 
-export default MainMenu;
+export default App;

@@ -5,14 +5,15 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import '../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
 import './index.css';
 import App from './App';
-import index from './components/index';
-import mainMenu from './components/mainMenu';
-import aboutPage from './components/aboutPage';
-import helpPage from './components/helpPage';
-import userLogin from './components/userLogin';
-import userSignUp from './components/userSignUp';
-import userProfile from './components/userProfile';
-import ProgrammingLanguagePage from './components/ProgrammingLanguagePage';
+import index from './pages/index';
+import mainMenu from './pages/mainMenu';
+import aboutPage from './pages/aboutPage';
+import codeTranslator from './pages/codeTranslator';
+import helpPage from './pages/helpPage';
+import userLogin from './pages/userLogin';
+import userSignUp from './pages/userSignUp';
+import userProfile from './pages/userProfile';
+import ProgrammingLanguagePage from './pages/ProgrammingLanguagePage';
 import * as serviceWorker from './serviceWorker';
 //import registerServiceWorker from './registerServiceWorker';
 
@@ -23,12 +24,13 @@ ReactDOM.render(
       <div>
         <Route exact path='/' component={index} />
         <Route exact path='/mainmenu' component={mainMenu} />
+        <Route exact path='/courses' component={ProgrammingLanguagePage} />
+        <Route exact path='/translator' component={codeTranslator} />
         <Route exact path='/about' component={aboutPage} />
         <Route exact path='/help' component={helpPage} />
         <Route exact path='/userlogin' component={userLogin} />
         <Route exact path='/userprofile' component={userProfile} />
         <Route exact path='/usersignUp' component={userSignUp} />
-        <Route exact path='/courses' component={ProgrammingLanguagePage} />
       </div>
     </Router>
     </React.StrictMode>,
