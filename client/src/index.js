@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import '../node_modules/bootstrap/dist/css/bootstrap-theme.min.css';
 import './index.css';
-import App from './App';
 import index from './pages/indexPage';
 import mainMenu from './pages/mainMenuPage';
 import aboutPage from './pages/aboutPage';
@@ -13,7 +12,7 @@ import helpPage from './pages/helpPage';
 import userLogin from './pages/userLoginPage';
 import userSignUp from './pages/userSignUpPage';
 import userProfile from './pages/userProfilePage';
-import ProgrammingLanguagePage from './pages/ProgrammingLanguagePage';
+import CoursePage from './pages/CoursePage';
 import * as serviceWorker from './serviceWorker';
 //import registerServiceWorker from './registerServiceWorker';
 
@@ -24,7 +23,7 @@ ReactDOM.render(
       <div>
         <Route exact path='/' component={index} />
         <Route exact path='/mainmenu' component={mainMenu} />
-        <Route exact path='/courses' component={ProgrammingLanguagePage} />
+        <Route exact path='/courses' component={CoursePage} />
         <Route exact path='/translator' component={codeTranslator} />
         <Route exact path='/about' component={aboutPage} />
         <Route exact path='/help' component={helpPage} />
