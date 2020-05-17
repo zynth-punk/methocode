@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavigationBar } from '../components/NavigationBar';
-import GetPL from '../components/getProgrammingLanguage'
+import GetPL from '../dataComponents/getProgrammingLanguage'
 
 function App() {
   return (
