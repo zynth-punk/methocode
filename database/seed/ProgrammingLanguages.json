@@ -1,0 +1,15 @@
+[
+    { 
+        "title" : "C++" ,
+        "description" : "C++ is a very popular language among video game development and applications that involve high speed computation" 
+    },
+    {
+        "title" : "Python" ,
+        "description" : "Python is a very easy to learn language and it's widely used for web apps, small applications and even Machine Learning" 
+    },
+    {
+        "title" : "Javascript" ,
+        "description" : "Javascript is a the most used language due to how almost every Web app's front end is built with it, it's also used for Databases and for Back-end" 
+    }
+    
+]

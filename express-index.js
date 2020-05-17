@@ -1,12 +1,13 @@
 const express = require('express');
-const db = require('./data');
+const app = express();
+const api = require('./api/mainRouter.js');
+const courseRouter = require('./api//routes/courseRouter.js');
+const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const app = express();
-const router = express.Router();
-require('dotenv').config();
-
 var path = require('path');
+require('dotenv').config();
+const db = require('./database/databaseindex.js');
 
 const port = process.env.PORT || 5000;
 
@@ -16,15 +17,29 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(cors());
+app.use('/', api);
 
 app.use(express.static(path.join(__dirname , '/public')));
 
-var pageRouter = require('./routes/page_router.js');
+app.use(morgan('dev'));
 
-app.use('/', pageRouter);
+app.use('/courses', courseRouter);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 app.listen(port, () => {
