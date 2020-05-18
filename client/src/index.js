@@ -22,6 +22,7 @@ ReactDOM.render(
     <Router>
       <div>
         <Route exact path='/' component={index} />
+        <Route exact path='/index' component={index} />
         <Route exact path='/mainmenu' component={mainMenu} />
         <Route exact path='/courses' component={CoursePage} />
         <Route exact path='/translator' component={codeTranslator} />

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
 import styled from 'styled-components';
+import Button from 'react-bootstrap/Button';
 
 const Styles = styled.div`
-  .navbar { background-color: #001659; }
+  .navbar { background-color: #282c34; }
   a, .navbar-nav, .navbar-light .nav-link {
     color: #babdc6;
     &:hover { color: white; }
@@ -15,24 +16,26 @@ const Styles = styled.div`
     &:hover { color: white; }
   }
   .form-center {
-    position: absolute !important;
+    position: fixed !important;
+
     left: 35%;
     right: 35%;
   }
+  
 `;
 
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
       <Navbar.Brand href="/mainmenu">MethoCode</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
       <Form className="form-center">
         <FormControl type="text" placeholder="Search" className="" />
       </Form>
+      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Item><Nav.Link href="/help">help</Nav.Link></Nav.Item> 
-          <Nav.Item><Nav.Link href="/userprofile">User</Nav.Link></Nav.Item>
+          <Nav.Item style={{padding: 10}} ><Button variant="outline-dark"><Nav.Link href="/help">Help</Nav.Link></Button></Nav.Item> 
+          <Nav.Item style={{padding: 10}} ><Button variant="outline-dark"><Nav.Link href="/userprofile">User</Nav.Link></Button></Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

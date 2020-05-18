@@ -6,7 +6,6 @@ function MainMenu() {
     <div className="App">
       <NavigationBar />
       <header className="App-header">
-        
         <p>
           Hello from Log in.
         </p>
