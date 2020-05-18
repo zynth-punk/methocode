@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 var path = require('path');
 require('dotenv').config();
-const db = require('./database/databaseindex.js');
+const db = require('./database/databaseIndex.js');
 
 const port = process.env.PORT || 5000;
 
