@@ -7,7 +7,6 @@ function MainMenu() {
   return (
     <div className="App">
       <NavigationBar />
-      <BodyLayout>
         <div className="App-PLsCourses-Tab">
           <h1>Programming Languages</h1>
           <table>
@@ -17,7 +16,6 @@ function MainMenu() {
         <div className="App-FWsCourses-Tab">
 
         </div>
-      </BodyLayout>
     </div>
   );
 }

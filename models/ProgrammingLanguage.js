@@ -4,11 +4,11 @@ const {Schema} = mongoose;
 
 //const ProgrammingLanguage = new Schema ( {value: {type: String}  }  );
 
-module.exports = mongoose.model('ProgrammingLanguage', new Schema(
+module.exports = mongoose.model('ProgrammingLanguages', new Schema(
   { 
       "title": {type: String},
       "description": {type: String}
     }
-  ), 'Courses'); 
+  ), 'ProgrammingLanguages'); 
 
 //module.exports = mongoose.model('ProgrammingLanguage', ProgrammingLanguage)
