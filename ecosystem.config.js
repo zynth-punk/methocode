@@ -1,4 +1,7 @@
+var io = require('@pm2/io')
+
 module.exports = {
+  
   apps : [{
     name      : "RESTFulAPI",
     script    : "npm run dev",

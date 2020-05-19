@@ -24,6 +24,7 @@ const Styles = styled.div`
   
 `;
 
+
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
