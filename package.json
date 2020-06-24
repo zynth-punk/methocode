@@ -37,7 +37,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
-    "concurrently": "^4.0.1",
+    "concurrently": "^4.1.2",
     "nodemon": "^1.18.4"
   },
   "proxy": "http://localhost:5000"
